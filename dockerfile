@@ -44,6 +44,8 @@ RUN apt-get install -y --no-install-recommends \
 
 RUN pip install setuptools==58.2.0
 RUN pip install transforms3d
+RUN pip install gTTS
+RUN pip install openai-whisper
 
 # config tmux
 RUN echo "unbind -n Tab"                                                                    >> ~/.tmux.conf
